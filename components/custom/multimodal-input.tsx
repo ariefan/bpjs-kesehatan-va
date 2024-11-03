@@ -27,8 +27,8 @@ const suggestedActions = [
   },
   {
     title: "Dari data yang ada,",
-    label: 'tampikan 10 diagnosis terbanyak dari peserta BPJS! Tampilkan dalam bentuk grafik batang!',
-      action: "Dari data yang ada, tampikan 10 diagnosis terbanyak dari peserta BPJS! Tampilkan dalam bentuk grafik batang!",
+    label: 'berapa klaim yang harus dibayar oleh BPJS ke FKRTL?',
+    action: "Dari data yang ada, berapa klaim yang harus dibayar oleh BPJS ke FKRTL?",
   },
 ];
 
