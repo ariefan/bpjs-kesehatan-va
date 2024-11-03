@@ -27,8 +27,8 @@ const suggestedActions = [
   },
   {
     title: "Dari data yang ada,",
-    label: 'berapa klaim yang harus dibayar oleh BPJS ke FKRTL?',
-    action: "Dari data yang ada, berapa klaim yang harus dibayar oleh BPJS ke FKRTL?",
+    label: 'berapa total nila klaim bulan ini?',
+    action: "Dari data yang ada, berapa total nila klaim bulan ini?",
   },
 ];
 
