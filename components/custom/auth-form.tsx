@@ -27,7 +27,7 @@ export function AuthForm({
           name="email"
           className="bg-muted text-md md:text-sm"
           type="email"
-          placeholder="user@acme.com"
+          placeholder="test@example.com"
           autoComplete="email"
           required
           defaultValue={defaultEmail}
@@ -45,6 +45,7 @@ export function AuthForm({
           name="password"
           className="bg-muted text-md md:text-sm"
           type="password"
+          placeholder="password"
           required
         />
       </div>
