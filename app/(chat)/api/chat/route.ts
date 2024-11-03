@@ -35,6 +35,8 @@ Buat deskripsi atau instruksi yang menjelaskan bagaimana AIVA, asisten virtual b
 - Sebutkan bagaimana AIVA dapat membantu dalam analisis data dan pengambilan keputusan.
 - Gambarkan skenario spesifik di mana AIVA berfungsi untuk meningkatkan efisiensi pelaksanaan kebijakan.
 - Berikan contoh bagaimana AIVA dapat berinteraksi dengan pengguna dan memproses data.
+- Anda harus menjawab pertanyaan berdasarkan perhitungan data yang diberikan
+- Bulan ini adalah bulan November 2024
 
 # Format Output
 
@@ -207,56 +209,6 @@ P047,Pasien U,Wanita,69,Infeksi Saluran Pernafasan Akut,2024-08-03,Ditolak,-,977
 P048,Pasien V,Wanita,48,Penyakit Jantung,2024-12-04,Tertunda,-,8102578,0,8102578,RS E,Poli Saraf,"Amlodipine, Salbutamol",-
 P049,Pasien W,Wanita,55,Penyakit Jantung,2024-06-19,Disetujui,2024-06-27,12050050,12050050,0,RS G,Poli Umum,Amlodipine,2 Hari
 P050,Pasien X,Wanita,64,Hepatitis,2024-02-23,Disetujui,2024-03-03,3150614,3150614,0,RS F,Poli Jantung,"Insulin, Metformin",9 Hari
-P051,Pasien Y,Wanita,68,Hepatitis,2024-08-12,Ditolak,-,14931905,0,14931905,RS D,Poli Saraf,"Insulin, Metformin, Salbutamol",-
-P052,Pasien Z,Pria,70,Diabetes Melitus,2024-07-18,Tertunda,-,6062978,0,6062978,RS D,Poli Umum,"Aspirin, Paracetamol",-
-P053,Pasien A,Wanita,77,Hepatitis,2024-01-11,Disetujui,2024-01-14,1786833,1786833,0,RS B,Poli Umum,"Salbutamol, Ramipril",5 Hari
-P054,Pasien B,Pria,33,Diabetes Melitus,2024-07-14,Tertunda,-,10069697,0,10069697,RS A,Poli Paru,"Paracetamol, Insulin",-
-P055,Pasien C,Wanita,71,Demam Berdarah,2024-06-16,Disetujui,2024-06-22,3755763,3755763,0,RS B,Poli Jantung,"Ramipril, Insulin, Metformin",3 Hari
-P056,Pasien D,Wanita,38,Demam Berdarah,2024-11-10,Tertunda,-,8894748,0,8894748,RS F,Poli Jantung,Aspirin,-
-P057,Pasien E,Wanita,40,Diabetes Melitus,2024-02-26,Tertunda,-,14351745,0,14351745,RS F,Poli Penyakit Dalam,"Ramipril, Paracetamol, Metformin",-
-P058,Pasien F,Pria,68,Demam Berdarah,2024-06-12,Disetujui,2024-06-22,9846918,9846918,0,RS F,Poli Umum,"Paracetamol, Ramipril",6 Hari
-P059,Pasien G,Pria,23,Infeksi Saluran Pernafasan Akut,2024-04-24,Ditolak,-,6248765,0,6248765,RS A,Poli Penyakit Dalam,"Salbutamol, Amlodipine",-
-P060,Pasien H,Pria,72,Diabetes Melitus,2024-07-15,Ditolak,-,7704806,0,7704806,RS F,Poli Umum,"Ramipril, Insulin",-
-P061,Pasien I,Pria,73,Tuberkulosis,2024-05-30,Tertunda,-,1148844,0,1148844,RS F,Poli Penyakit Dalam,"Ramipril, Aspirin",-
-P062,Pasien J,Wanita,21,Gagal Ginjal Kronis,2024-10-07,Disetujui,2024-10-09,10199426,10199426,0,RS F,Poli Umum,"Salbutamol, Amlodipine, Ramipril",1 Hari
-P063,Pasien K,Pria,34,Diabetes Melitus,2024-10-24,Tertunda,-,8668387,0,8668387,RS F,Poli Penyakit Dalam,"Paracetamol, Ramipril, Aspirin",-
-P064,Pasien L,Pria,62,Tuberkulosis,2024-09-13,Tertunda,-,11374011,0,11374011,RS G,Poli Umum,"Amlodipine, Insulin",-
-P065,Pasien M,Wanita,27,Stroke,2024-01-15,Ditolak,-,11349675,0,11349675,RS D,Poli Umum,Salbutamol,-
-P066,Pasien N,Wanita,62,Demam Berdarah,2024-07-04,Disetujui,2024-07-13,1862461,1862461,0,RS B,Poli Umum,"Ramipril, Amlodipine",9 Hari
-P067,Pasien O,Pria,68,Stroke,2024-12-31,Ditolak,-,8125342,0,8125342,RS B,Poli Jantung,"Aspirin, Paracetamol, Ramipril",-
-P068,Pasien P,Pria,70,Infeksi Saluran Pernafasan Akut,2024-04-16,Disetujui,2024-04-22,5236001,5236001,0,RS F,Poli Paru,Insulin,7 Hari
-P069,Pasien Q,Pria,77,Hipertensi,2024-11-18,Disetujui,2024-11-20,12072048,12072048,0,RS E,Poli Umum,Insulin,6 Hari
-P070,Pasien R,Pria,75,Tuberkulosis,2024-09-20,Tertunda,-,1335388,0,1335388,RS E,Poli Umum,"Aspirin, Ramipril, Paracetamol",-
-P071,Pasien S,Wanita,31,Demam Berdarah,2024-08-06,Disetujui,2024-08-09,11103716,11103716,0,RS D,Poli Paru,"Salbutamol, Paracetamol",5 Hari
-P072,Pasien T,Pria,70,Demam Berdarah,2024-10-31,Ditolak,-,3957281,0,3957281,RS G,Poli Umum,"Insulin, Paracetamol, Aspirin",-
-P073,Pasien U,Pria,35,Infeksi Saluran Pernafasan Akut,2024-11-16,Ditolak,-,13517075,0,13517075,RS F,Poli Umum,"Ramipril, Salbutamol, Paracetamol",-
-P074,Pasien V,Wanita,34,Demam Berdarah,2024-06-25,Ditolak,-,10287318,0,10287318,RS A,Poli Umum,"Ramipril, Salbutamol, Amlodipine",-
-P075,Pasien W,Pria,53,Demam Berdarah,2024-06-30,Disetujui,2024-07-05,2459573,2459573,0,RS A,Poli Umum,"Ramipril, Paracetamol, Aspirin",8 Hari
-P076,Pasien X,Pria,72,Stroke,2024-05-16,Tertunda,-,3031981,0,3031981,RS A,Poli Jantung,Amlodipine,-
-P077,Pasien Y,Wanita,72,Demam Berdarah,2024-11-15,Tertunda,-,12874008,0,12874008,RS B,Poli Penyakit Dalam,Paracetamol,-
-P078,Pasien Z,Pria,80,Asma,2024-12-10,Disetujui,2024-12-11,1521951,1521951,0,RS B,Poli Jantung,Paracetamol,8 Hari
-P079,Pasien A,Wanita,72,Hipertensi,2024-05-15,Disetujui,2024-05-18,4675552,4675552,0,RS D,Poli Jantung,Metformin,8 Hari
-P080,Pasien B,Wanita,76,Penyakit Jantung,2024-05-13,Disetujui,2024-05-16,8558062,8558062,0,RS B,Poli Penyakit Dalam,"Amlodipine, Insulin",9 Hari
-P081,Pasien C,Wanita,64,Hipertensi,2024-01-30,Ditolak,-,3302238,0,3302238,RS E,Poli Umum,"Paracetamol, Metformin, Aspirin",-
-P082,Pasien D,Wanita,35,Gagal Ginjal Kronis,2024-08-03,Disetujui,2024-08-04,6150153,6150153,0,RS D,Poli Saraf,Paracetamol,4 Hari
-P083,Pasien E,Pria,57,Tuberkulosis,2024-12-22,Ditolak,-,1172063,0,1172063,RS D,Poli Jantung,Amlodipine,-
-P084,Pasien F,Pria,54,Diabetes Melitus,2024-01-15,Tertunda,-,11594740,0,11594740,RS G,Poli Paru,"Metformin, Salbutamol",-
-P085,Pasien G,Wanita,57,Stroke,2024-09-15,Tertunda,-,11488951,0,11488951,RS F,Poli Umum,"Metformin, Ramipril, Salbutamol",-
-P086,Pasien H,Pria,45,Demam Berdarah,2024-04-13,Disetujui,2024-04-23,12440064,12440064,0,RS E,Poli Penyakit Dalam,Amlodipine,8 Hari
-P087,Pasien I,Wanita,48,Stroke,2024-11-27,Tertunda,-,9374215,0,9374215,RS F,Poli Penyakit Dalam,"Aspirin, Salbutamol, Paracetamol",-
-P088,Pasien J,Wanita,80,Infeksi Saluran Pernafasan Akut,2024-12-15,Ditolak,-,6334605,0,6334605,RS F,Poli Penyakit Dalam,"Salbutamol, Amlodipine, Aspirin",-
-P089,Pasien K,Pria,64,Demam Berdarah,2024-12-17,Disetujui,2024-12-26,6604660,6604660,0,RS B,Poli Jantung,Metformin,5 Hari
-P090,Pasien L,Wanita,24,Diabetes Melitus,2024-06-05,Ditolak,-,3367866,0,3367866,RS C,Poli Penyakit Dalam,"Ramipril, Aspirin",-
-P091,Pasien M,Pria,58,Stroke,2024-02-01,Disetujui,2024-02-10,860849,860849,0,RS A,Poli Saraf,Amlodipine,7 Hari
-P092,Pasien N,Wanita,40,Hipertensi,2024-02-15,Tertunda,-,4500088,0,4500088,RS D,Poli Penyakit Dalam,"Salbutamol, Metformin",-
-P093,Pasien O,Wanita,74,Infeksi Saluran Pernafasan Akut,2024-01-03,Disetujui,2024-01-06,9945717,9945717,0,RS C,Poli Jantung,"Metformin, Insulin, Paracetamol",8 Hari
-P094,Pasien P,Wanita,33,Penyakit Jantung,2024-08-23,Tertunda,-,12863949,0,12863949,RS F,Poli Saraf,"Metformin, Salbutamol",-
-P095,Pasien Q,Pria,36,Stroke,2024-12-20,Tertunda,-,12924579,0,12924579,RS A,Poli Saraf,"Paracetamol, Aspirin",-
-P096,Pasien R,Pria,41,Infeksi Saluran Pernafasan Akut,2024-02-07,Disetujui,2024-02-16,6276438,6276438,0,RS G,Poli Paru,Salbutamol,6 Hari
-P097,Pasien S,Pria,30,Infeksi Saluran Pernafasan Akut,2024-04-29,Ditolak,-,14871790,0,14871790,RS D,Poli Umum,"Paracetamol, Salbutamol",-
-P098,Pasien T,Wanita,48,Hipertensi,2024-03-23,Disetujui,2024-03-25,907355,907355,0,RS F,Poli Jantung,Paracetamol,2 Hari
-P099,Pasien U,Wanita,26,Asma,2024-06-11,Ditolak,-,9420618,0,9420618,RS G,Poli Umum,"Ramipril, Amlodipine, Metformin",-
-P100,Pasien V,Pria,63,Penyakit Jantung,2024-11-14,Disetujui,2024-11-17,9234438,9234438,0,RS D,Poli Jantung,Aspirin,3 Hari
   `;
   const coreMessages = convertToCoreMessages(messages);
 
@@ -287,12 +239,13 @@ P100,Pasien V,Pria,63,Penyakit Jantung,2024-11-14,Disetujui,2024-11-17,9234438,9
       getPythonScriptResult: {
         description: `
           Execute a Python script and get the result.
-          The python script must be print output in string. 
-          The string output must be in html syntax. 
-          You can use matplotlib to plot the graph and return with <img> html tag with base64 string.
+          The python script must be print output in string.
+          The string output must be in html syntax.
+          You can use matplotlib to plot the graph and return with base64 string (no html tag).
           Don't use function and class in the script.
           Don't use indentation in the script.
           The script must be in one line.
+          The scrip tmust be end with print() function.
         `,
         parameters: z.object({
           script: z.string(),

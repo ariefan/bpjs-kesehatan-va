@@ -3,6 +3,7 @@
 import { Attachment, ToolInvocation } from 'ai';
 import { motion } from 'framer-motion';
 import { Sparkles } from 'lucide-react';
+import Image from 'next/image';
 import { ReactNode } from 'react';
 
 import { Markdown } from './markdown';
@@ -52,6 +53,12 @@ export const Message = ({
                     <div key={toolCallId}>
                       {toolName === 'getWeather' ? (
                         <Weather weatherAtLocation={result} />
+                      ) : null}
+                      {toolName === 'getPythonScriptResult' ? (
+                        <img
+                          src={`data:image/jpeg;base64,${result}`}
+                          alt="Weather Image"
+                        />
                       ) : null}
                     </div>
                   );
