@@ -70,7 +70,7 @@ export function AppSidebar({ user }: { user: User | undefined }) {
               >
                 <span className="sr-only">Deploy</span>
               </a>
-              <CardHeader className="p-0">
+              {/* <CardHeader className="p-0">
                 <CardTitle className="text-base">Deploy your own</CardTitle>
                 <CardDescription className="text-sm">
                   Open Source Chatbot template built with Next.js and the AI SDK
@@ -82,7 +82,7 @@ export function AppSidebar({ user }: { user: User | undefined }) {
                   <VercelIcon size={16} />
                   Deploy with Vercel
                 </Button>
-              </CardFooter>
+              </CardFooter> */}
             </Card>
           </SidebarGroupContent>
         </SidebarGroup>
