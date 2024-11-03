@@ -29,7 +29,7 @@ export function ChatHeader({
       </BetterTooltip>
       <ModelSelector
         selectedModelName={selectedModelName}
-        className="order-1 md:order-2"
+        className="order-1 md:order-2 hidden"
       />
     </header>
   );

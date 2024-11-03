@@ -37,6 +37,7 @@
     "next": "15.0.1",
     "next-auth": "5.0.0-beta.25",
     "next-themes": "^0.3.0",
+    "openai": "^4.68.4",
     "postgres": "^3.4.4",
     "react": "19.0.0-rc-45804af1-20241021",
     "react-dom": "19.0.0-rc-45804af1-20241021",
