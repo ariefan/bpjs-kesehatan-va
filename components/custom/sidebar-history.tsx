@@ -87,7 +87,7 @@ export function SidebarHistory({ user }: { user: User | undefined }) {
   if (!user) {
     return (
       <SidebarGroup>
-        <SidebarGroupLabel>History</SidebarGroupLabel>
+        <SidebarGroupLabel>Riwayat Percakapan</SidebarGroupLabel>
         <SidebarGroupContent>
           <div className="text-zinc-500 h-dvh w-full flex flex-row justify-center items-center text-sm gap-2">
             <InfoIcon />
@@ -101,7 +101,7 @@ export function SidebarHistory({ user }: { user: User | undefined }) {
   if (isLoading) {
     return (
       <SidebarGroup>
-        <SidebarGroupLabel>History</SidebarGroupLabel>
+        <SidebarGroupLabel>Riwayat Percakapan</SidebarGroupLabel>
         <SidebarGroupContent>
           <div className="flex flex-col">
             {[44, 32, 28, 64, 52].map((item) => (
@@ -128,7 +128,7 @@ export function SidebarHistory({ user }: { user: User | undefined }) {
   if (history?.length === 0) {
     return (
       <SidebarGroup>
-        <SidebarGroupLabel>History</SidebarGroupLabel>
+        <SidebarGroupLabel>Riwayat Percakapan</SidebarGroupLabel>
         <SidebarGroupContent>
           <SidebarMenu>
             <SidebarMenuItem>
@@ -146,7 +146,7 @@ export function SidebarHistory({ user }: { user: User | undefined }) {
   return (
     <>
       <SidebarGroup>
-        <SidebarGroupLabel>History</SidebarGroupLabel>
+        <SidebarGroupLabel>Riwayat Percakapan</SidebarGroupLabel>
         <SidebarGroupContent>
           <SidebarMenu>
             {history &&

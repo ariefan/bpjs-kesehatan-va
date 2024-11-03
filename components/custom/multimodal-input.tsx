@@ -21,14 +21,14 @@ import { Textarea } from '../ui/textarea';
 
 const suggestedActions = [
   {
-    title: 'What is the weather',
-    label: 'in San Francisco?',
-    action: 'What is the weather in San Francisco?',
+    title: 'Dari data yang ada,',
+    label: 'diagnosis apa yang menghasilkan klaim tertinggi?',
+    action: 'Dari data yang ada, diagnosis apa yang menghasilkan klaim tertinggi?',
   },
   {
-    title: "Answer like I'm 5,",
-    label: 'why is the sky blue?',
-    action: "Answer like I'm 5, why is the sky blue?",
+    title: "Dari data yang ada,",
+    label: 'tampikan 10 diagnosis terbanyak dari peserta BPJS! Tampilkan dalam bentuk grafik batang!',
+      action: "Dari data yang ada, tampikan 10 diagnosis terbanyak dari peserta BPJS! Tampilkan dalam bentuk grafik batang!",
   },
 ];
 
@@ -217,7 +217,7 @@ export function MultimodalInput({
 
       <Textarea
         ref={textareaRef}
-        placeholder="Send a message..."
+        placeholder="Kirim pertanyaan..."
         value={input}
         onChange={handleInput}
         className="min-h-[24px] overflow-hidden resize-none rounded-xl p-4 focus-visible:ring-0 focus-visible:ring-offset-0 text-base bg-muted border-none"
