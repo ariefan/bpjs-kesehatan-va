@@ -94,6 +94,7 @@ Dalam interaksi sehari-hari, AIVA dapat memberikan rekomendasi berbasis data kep
         }),
         execute: async ({ script }) => {
           try {
+            process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
             console.log(
               JSON.stringify({ script: script.replace(/\n/g, '\n') })
             );
