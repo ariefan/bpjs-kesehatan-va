@@ -86,6 +86,43 @@ Dalam interaksi sehari-hari, AIVA dapat memberikan rekomendasi berbasis data kep
           return weatherData;
         },
       },
+      getPythonScriptResult: {
+        description:
+          'Execute a Python script and get the result. The python script must be print output in string.',
+        parameters: z.object({
+          script: z.string(),
+        }),
+        execute: async ({ script }) => {
+          try {
+            console.log(
+              JSON.stringify({ script: script.replace(/\n/g, '\n') })
+            );
+            const response = await fetch(
+              'https://aiva.technosmart.id/api/run/',
+              {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ script: script.replace(/\n/g, '\n') }),
+              }
+            );
+
+            // Check if the response is ok (status in the range 200-299)
+            if (!response.ok) {
+              throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+
+            const result = await response.json();
+
+            // Assuming the result is a string; adjust if the structure is different
+            return typeof result === 'string' ? result : JSON.stringify(result);
+          } catch (error) {
+            console.error('Error executing script:', error);
+            return 'An error occurred while executing the script.';
+          }
+        },
+      },
       getCreator: {
         description: 'Get the creator of this chat app',
         parameters: z.object({
