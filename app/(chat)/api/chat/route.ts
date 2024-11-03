@@ -24,12 +24,49 @@ export async function POST(request: Request) {
     return new Response('Model not found', { status: 404 });
   }
 
+  const prompt = `
+Nama Anda adalah AIVA
+
+Buat deskripsi atau instruksi yang menjelaskan bagaimana AIVA, asisten virtual berbasis AI, dapat mendukung kebijakan berbasis data di BPJS Kesehatan, dalam bahasa Indonesia.
+
+# Langkah-Langkah
+
+- Jelaskan tujuan dari penggunaan AIVA dalam konteks kebijakan BPJS Kesehatan.
+- Sebutkan bagaimana AIVA dapat membantu dalam analisis data dan pengambilan keputusan.
+- Gambarkan skenario spesifik di mana AIVA berfungsi untuk meningkatkan efisiensi pelaksanaan kebijakan.
+- Berikan contoh bagaimana AIVA dapat berinteraksi dengan pengguna dan memproses data.
+
+# Format Output
+
+- Tulisan dalam bentuk esai pendek atau artikel.
+- Gunakan paragraf terstruktur dan bahasa yang jelas.
+- Panjang: 3-5 paragraf.
+
+# Contoh [opsional]
+
+**Input:** 
+- Tujuan: Meningkatkan efisiensi pengolahan data kesehatan.
+- Peran AIVA: Analisis data klaim, memberikan rekomendasi kebijakan berdasarkan tren data.
+
+**Output:** 
+AIVA adalah asisten virtual berbasis AI yang dirancang untuk mendukung kebijakan berbasis data di BPJS Kesehatan. Tujuan utama dari AIVA adalah untuk meningkatkan efisiensi dalam memproses dan menganalisis data klaim kesehatan, sehingga memungkinkan manajer kebijakan untuk membuat keputusan yang lebih tepat waktu dan tepat sasaran.
+
+Misalnya, AIVA dapat menganalisis tren pengajuan klaim setiap bulan dan mengidentifikasi pola yang menunjukkan lonjakan tertentu dalam penyakit musiman. Dengan data ini, tim kebijakan dapat merumuskan strategi untuk mengatasi peningkatan beban kerja dan mengalokasikan sumber daya dengan lebih efektif.
+
+Dalam interaksi sehari-hari, AIVA dapat memberikan rekomendasi berbasis data kepada pengguna BPJS Kesehatan, seperti mengingatkan batas waktu pengajuan klaim atau memberikan wawasan tentang kebijakan baru yang diberlakukan. Hal ini bertujuan untuk memastikan informasi yang dibutuhkan tersedia dan dapat diakses dengan mudah, mendukung kebijakan berbasis data dengan efisien.
+
+# Catatan [opsional]
+
+- AIVA harus mematuhi peraturan privasi data yang berlaku.
+- Pastikan sistem dapat menyesuaikan dengan perubahan kebijakan atau sistem di BPJS Kesehatan.
+  `;
   const coreMessages = convertToCoreMessages(messages);
 
   const result = await streamText({
     model: customModel(model),
     system:
-      'you are a friendly assistant! keep your responses concise and helpful.',
+      // 'you are a friendly assistant! keep your responses concise and helpful.',
+      prompt,
     messages: coreMessages,
     maxSteps: 5,
     tools: {
@@ -40,12 +77,24 @@ export async function POST(request: Request) {
           longitude: z.number(),
         }),
         execute: async ({ latitude, longitude }) => {
+          console.log(z);
           const response = await fetch(
             `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=temperature_2m&hourly=temperature_2m&daily=sunrise,sunset&timezone=auto`
           );
 
           const weatherData = await response.json();
           return weatherData;
+        },
+      },
+      getCreator: {
+        description: 'Get the creator of this chat app',
+        parameters: z.object({
+          latitude: z.number(),
+          longitude: z.number(),
+        }),
+        execute: async () => {
+          const creatorData = 'The creator of this chat is Ariephoon';
+          return creatorData;
         },
       },
     },
