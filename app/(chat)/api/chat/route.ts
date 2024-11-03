@@ -238,7 +238,8 @@ P050,Pasien X,Wanita,64,Hepatitis,2024-02-23,Disetujui,2024-03-03,3150614,315061
       },
       getPythonScriptResult: {
         description: `
-          Execute a Python script and get the result.
+          Execute a Python script and get the image plot result.
+          You only run the script if user ask for data visualization
           The python script must be print output in string.
           The string output must be in html syntax.
           You can use matplotlib to plot the graph and return with base64 string (no html tag).
