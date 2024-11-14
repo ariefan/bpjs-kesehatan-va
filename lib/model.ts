@@ -1,8 +1,8 @@
 // Define your models here.
 export const models = [
   {
-    label: 'GPT 4o',
-    name: 'gpt-4o',
+    label: 'GPT 4o-mini',
+    name: 'gpt-4o-mini',
     description: 'For complex, multi-step tasks',
   },
   {

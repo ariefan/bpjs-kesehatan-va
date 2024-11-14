@@ -29,7 +29,7 @@ export const Message = ({
       data-role={role}
     >
       <div className="flex gap-4 group-data-[role=user]/message:px-5 w-full group-data-[role=user]/message:w-fit group-data-[role=user]/message:ml-auto group-data-[role=user]/message:max-w-2xl group-data-[role=user]/message:py-3.5 group-data-[role=user]/message:bg-muted rounded-xl">
-        {role === 'assistant' && (
+        {content && role === 'assistant' && (
           <div className="size-8 flex items-center rounded-full justify-center ring-1 shrink-0 ring-border">
             <Sparkles className="size-4" />
           </div>
@@ -54,15 +54,9 @@ export const Message = ({
                       {toolName === 'getWeather' ? (
                         <Weather weatherAtLocation={result} />
                       ) : null}
-                      {toolName === 'getPythonScriptResult' ? (
-                        <p>Membuat visualisasi...</p>
-                      ) : null}
-                      {toolName === 'getRawQueryResult' ? (
-                        <p>Mengeksekusi SQL query...</p>
-                      ) : null}
-                      {toolName === 'getCreator' ? (
-                        <p>Membaca pembuat AI...</p>
-                      ) : null}
+                      {toolName === 'getPythonScriptResult' ? <p></p> : null}
+                      {toolName === 'getRawQueryResult' ? <p></p> : null}
+                      {toolName === 'getCreator' ? <p>{result}</p> : null}
                     </div>
                   );
                 } else {
@@ -70,13 +64,19 @@ export const Message = ({
                     <div key={toolCallId} className="skeleton">
                       {toolName === 'getWeather' ? <Weather /> : null}
                       {toolName === 'getPythonScriptResult' ? (
-                        <p>Membuat visualisasi...</p>
+                        <p className="text-yellow-800 dark:text-yellow-200 p-4">
+                          Membuat visualisasi...
+                        </p>
                       ) : null}
                       {toolName === 'getRawQueryResult' ? (
-                        <p>Mengeksekusi SQL query...</p>
+                        <p className="text-yellow-800 dark:text-yellow-200 p-4">
+                          Mengeksekusi SQL query...
+                        </p>
                       ) : null}
                       {toolName === 'getCreator' ? (
-                        <p>Membaca pembuat AI...</p>
+                        <p className="text-yellow-800 dark:text-yellow-200 p-4">
+                          Membaca pembuat AI...
+                        </p>
                       ) : null}
                     </div>
                   );

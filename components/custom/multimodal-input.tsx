@@ -21,14 +21,48 @@ import { Textarea } from '../ui/textarea';
 
 const suggestedActions = [
   {
-    title: 'Dari data yang ada,',
-    label: 'diagnosis apa yang menghasilkan klaim tertinggi?',
-    action: 'Dari data yang ada, diagnosis apa yang menghasilkan klaim tertinggi?',
+    title: 'Informasi Data',
+    label: 'Data apa saja yang ada di basis data',
+    action:
+      'Tolong sebutkan data apa saja yang ada di basis data yang dapat diakses saat ini. Serta beritahu rentang data dari tanggal berapa sampai dengan berapa',
   },
   {
-    title: "Dari data yang ada,",
-    label: 'berapa total nila klaim bulan ini?',
-    action: "Dari data yang ada, berapa total nila klaim bulan ini?",
+    title: 'Diagnosis Tertinggi',
+    label: 'Diagnosis dengan total biaya klaim tertinggi',
+    action: 'Apa diagnosis dengan total biaya klaim tertinggi?',
+  },
+  {
+    title: 'Statistik Umum',
+    label: 'Statistik data secara umum',
+    action: 'Tampilkan statistik secara umum dari data yang ada',
+  },
+  {
+    title: 'Diagnosis Tertinggi',
+    label: '10 diagnosis dengan total biaya klaim tertinggi',
+    action:
+      'Buatkan grafik yang menggambarkan 10 diagnosis dengan total biaya klaim tertinggi',
+  },
+  {
+    title: 'Analisis Statistik',
+    label: 'Analisis statistik apa saja yang dapat dilakukan?',
+    action:
+      'Analisis statistik apa saja yang dapat dilakukan dengan data yang ada saat ini?',
+  },
+  {
+    title: 'Tren Klaim Bulanan',
+    label: 'Tren total klaim bulanan berdasarkan status klaim',
+    action: 'Buatkan grafik tren total klaim bulanan berdasarkan status klaim',
+  },
+  {
+    title: 'Forecasting',
+    label: 'Perkiraan total klaim 5 bulan ke depan',
+    action:
+      'Buatkan visualisasi perkiraan total klaim pada 5 bulan ke depan berdasarkan tren data yang ada',
+  },
+  {
+    title: 'Analisa Korelasi',
+    label: 'Korelasi dari data yang ada',
+    action: 'Lakukan analisis korelasi dari data yang ada',
   },
 ];
 

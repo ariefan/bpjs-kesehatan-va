@@ -55,7 +55,11 @@ Misalnya, AIVA dapat menganalisis tren pengajuan klaim setiap bulan dan mengiden
 
 Dalam interaksi sehari-hari, AIVA dapat memberikan rekomendasi berbasis data kepada pengguna BPJS Kesehatan, seperti mengingatkan batas waktu pengajuan klaim atau memberikan wawasan tentang kebijakan baru yang diberlakukan. Hal ini bertujuan untuk memastikan informasi yang dibutuhkan tersedia dan dapat diakses dengan mudah, mendukung kebijakan berbasis data dengan efisien.
 
-Tampilkan gambar jika terdapat url gambar
+Tampilkan gambar jika terdapat url gambar.
+
+Jika terdapat data tabular, dapat ditampilkan berupa tabel.
+
+User bukan orang teknis yang paham tentang query atau bahasa pemrograman. Jadi, gunakan bahasa yang mudah dipahami dan jangan berikan konten tentang bahasa pemrograman.
 
 Data pasien untuk klaim asuransi BPJS diambil dari database MySQL dengan struktur tabel sebagai berikut:
 CREATE TABLE pasien (
@@ -146,14 +150,15 @@ CREATE TABLE pasien (
         // Don't use indentation in the script.
         // The script must be in one line.
         description: `
-          Execute a Python script and get the image plot result.
-          You can use matplotlib to plot the graph and return with base64 string (no html tag).
-          NEVER use savefig() function.
+          Execute a Python script only for visualization using matplotlib or seaborn.
+          You can use matplotlib to plot the graph and print base64 string (no html tag).
           Don't use function and class in the script.
           Use english month name if needed. 
           Don't use lifelines library.
+          You can use multiple plots but must be merged into one base64 image.
+          MUST NOT print anything except print(image_base64) at the end of the script.
 
-          The python script may output in base64 string like this:
+          The python script MUST output in base64 image on each merged plot like this:
           import base64
           import io
           buf = io.BytesIO()
@@ -161,6 +166,12 @@ CREATE TABLE pasien (
           plt.close()
           image_base64 = base64.b64encode(buf.getvalue()).decode('utf-8')
           print(image_base64)
+
+          Connection to mysql:
+          db: bpjskesehatan,
+          user: bpjskesehatan,
+          pass: bpjskesehatan,
+          host: 52.74.211.217,
         `,
         parameters: z.object({
           script: z.string(),
