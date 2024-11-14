@@ -152,8 +152,10 @@ CREATE TABLE pasien (
           Use english month name if needed. 
           The script must be in one line.
           Don't use lifelines library.
-          
-          The python script must be print output in base64 string like this:
+
+          The python script may output in base64 string like this:
+          import base64
+          import io
           buf = io.BytesIO()
           plt.savefig(buf, format='png')
           plt.close()
