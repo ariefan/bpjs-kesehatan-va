@@ -146,14 +146,19 @@ CREATE TABLE pasien (
         description: `
           Execute a Python script and get the image plot result.
           You can use matplotlib to plot the graph and return with base64 string (no html tag).
-          The python script must be print output in base64 string.
-          The scrip must be end with print() function.
           NEVER use savefig() function.
           Don't use function and class in the script.
           Don't use indentation in the script.
           Use english month name if needed. 
           The script must be in one line.
           Don't use lifelines library.
+          
+          The python script must be print output in base64 string like this:
+          buf = io.BytesIO()
+          plt.savefig(buf, format='png')
+          plt.close()
+          image_base64 = base64.b64encode(buf.getvalue()).decode('utf-8')
+          print(image_base64)
         `,
         parameters: z.object({
           script: z.string(),
