@@ -143,14 +143,14 @@ CREATE TABLE pasien (
         },
       },
       getPythonScriptResult: {
+        // Don't use indentation in the script.
+        // The script must be in one line.
         description: `
           Execute a Python script and get the image plot result.
           You can use matplotlib to plot the graph and return with base64 string (no html tag).
           NEVER use savefig() function.
           Don't use function and class in the script.
-          Don't use indentation in the script.
           Use english month name if needed. 
-          The script must be in one line.
           Don't use lifelines library.
 
           The python script may output in base64 string like this:
