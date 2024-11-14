@@ -151,14 +151,14 @@ CREATE TABLE pasien (
         // The script must be in one line.
         description: `
           Execute a Python script only for visualization using matplotlib or seaborn.
+          Make sure don't have error like: 'can only concatenate list (not "int")' or 'All arrays must be of the same length'.
           You can use matplotlib to plot the graph and print base64 string (no html tag).
           Don't use function and class in the script.
           Use english month name if needed. 
           Don't use lifelines library.
-          You can use multiple plots but must be merged into one base64 image.
           MUST NOT print anything except print(image_base64) at the end of the script.
 
-          The python script MUST output in base64 image on each merged plot like this:
+          The python script MUST output in base64 like this:
           import base64
           import io
           buf = io.BytesIO()
