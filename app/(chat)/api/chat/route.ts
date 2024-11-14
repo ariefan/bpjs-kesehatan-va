@@ -118,7 +118,7 @@ CREATE TABLE pasien (
         }),
         execute: async ({ query }) => {
           try {
-            process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+            // process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
             console.log(JSON.stringify({ query: query }));
             const response = await fetch(
               'https://aiva.technosmart.id/api/raw-query/',
@@ -178,7 +178,7 @@ CREATE TABLE pasien (
         }),
         execute: async ({ script }) => {
           try {
-            process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+            // process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
             console.log(
               JSON.stringify({ script: script.replace(/\n/g, '\n') })
             );
