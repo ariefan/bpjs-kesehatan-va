@@ -154,6 +154,7 @@ CREATE TABLE pasien (
           The script must be in one line.
           The scrip tmust be end with print() function.
           You can combine multiple plot into one image.
+          Don't use lifelines library.
         `,
         parameters: z.object({
           script: z.string(),
