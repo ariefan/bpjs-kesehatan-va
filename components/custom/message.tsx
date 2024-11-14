@@ -54,12 +54,6 @@ export const Message = ({
                       {toolName === 'getWeather' ? (
                         <Weather weatherAtLocation={result} />
                       ) : null}
-                      {toolName === 'getPythonScriptResult' ? (
-                        <img
-                          src={`data:image/jpeg;base64,${result}`}
-                          alt="Weather Image"
-                        />
-                      ) : null}
                     </div>
                   );
                 } else {
