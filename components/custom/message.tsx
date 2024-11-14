@@ -54,12 +54,30 @@ export const Message = ({
                       {toolName === 'getWeather' ? (
                         <Weather weatherAtLocation={result} />
                       ) : null}
+                      {toolName === 'getPythonScriptResult' ? (
+                        <p>Membuat visualisasi...</p>
+                      ) : null}
+                      {toolName === 'getRawQueryResult' ? (
+                        <p>Mengeksekusi SQL query...</p>
+                      ) : null}
+                      {toolName === 'getCreator' ? (
+                        <p>Membaca pembuat AI...</p>
+                      ) : null}
                     </div>
                   );
                 } else {
                   return (
                     <div key={toolCallId} className="skeleton">
                       {toolName === 'getWeather' ? <Weather /> : null}
+                      {toolName === 'getPythonScriptResult' ? (
+                        <p>Membuat visualisasi...</p>
+                      ) : null}
+                      {toolName === 'getRawQueryResult' ? (
+                        <p>Mengeksekusi SQL query...</p>
+                      ) : null}
+                      {toolName === 'getCreator' ? (
+                        <p>Membaca pembuat AI...</p>
+                      ) : null}
                     </div>
                   );
                 }
