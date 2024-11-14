@@ -145,7 +145,7 @@ CREATE TABLE pasien (
       getPythonScriptResult: {
         description: `
           Execute a Python script and get the image plot result.
-          Don't save the image plot result in the server.
+          Don't save the image plot or use savefig function.
           The python script must be print output in base64 string.
           You can use matplotlib to plot the graph and return with base64 string (no html tag).
           Don't use function and class in the script.
