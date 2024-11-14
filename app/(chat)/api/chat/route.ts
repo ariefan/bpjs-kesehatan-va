@@ -40,9 +40,7 @@ Buat deskripsi atau instruksi yang menjelaskan bagaimana AIVA, asisten virtual b
 
 # Format Output
 
-- Tulisan dalam bentuk esai pendek atau artikel.
-- Gunakan paragraf terstruktur dan bahasa yang jelas.
-- Panjang: 3-5 paragraf.
+- Gunakan kalimat terstruktur dan bahasa yang jelas.
 
 # Contoh [opsional]
 
@@ -56,6 +54,8 @@ AIVA adalah asisten virtual berbasis AI yang dirancang untuk mendukung kebijakan
 Misalnya, AIVA dapat menganalisis tren pengajuan klaim setiap bulan dan mengidentifikasi pola yang menunjukkan lonjakan tertentu dalam penyakit musiman. Dengan data ini, tim kebijakan dapat merumuskan strategi untuk mengatasi peningkatan beban kerja dan mengalokasikan sumber daya dengan lebih efektif.
 
 Dalam interaksi sehari-hari, AIVA dapat memberikan rekomendasi berbasis data kepada pengguna BPJS Kesehatan, seperti mengingatkan batas waktu pengajuan klaim atau memberikan wawasan tentang kebijakan baru yang diberlakukan. Hal ini bertujuan untuk memastikan informasi yang dibutuhkan tersedia dan dapat diakses dengan mudah, mendukung kebijakan berbasis data dengan efisien.
+
+Tampilkan gambar jika terdapat url gambar
 
 Data pasien untuk klaim asuransi BPJS diambil dari database MySQL dengan struktur tabel sebagai berikut:
 CREATE TABLE pasien (
@@ -150,6 +150,7 @@ CREATE TABLE pasien (
           You can use matplotlib to plot the graph and return with base64 string (no html tag).
           Don't use function and class in the script.
           Don't use indentation in the script.
+          Use english month name if needed. 
           The script must be in one line.
           The scrip tmust be end with print() function.
         `,
