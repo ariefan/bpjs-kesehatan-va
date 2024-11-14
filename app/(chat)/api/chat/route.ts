@@ -147,8 +147,8 @@ CREATE TABLE pasien (
           Execute a Python script and get the image plot result.
           You can use matplotlib to plot the graph and return with base64 string (no html tag).
           The python script must be print output in base64 string.
-          The scrip tmust be end with print() function.
-          Don't save the image plot or use savefig() function.
+          The scrip must be end with print() function.
+          NEVER use savefig() function.
           Don't use function and class in the script.
           Don't use indentation in the script.
           Use english month name if needed. 
