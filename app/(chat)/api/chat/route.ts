@@ -153,6 +153,7 @@ CREATE TABLE pasien (
           Use english month name if needed. 
           The script must be in one line.
           The scrip tmust be end with print() function.
+          You can combine multiple plot into one image.
         `,
         parameters: z.object({
           script: z.string(),
