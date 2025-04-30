@@ -50,6 +50,7 @@ export default async function RootLayout({
       suppressHydrationWarning
     >
       <head>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet" />
         <script
           dangerouslySetInnerHTML={{
             __html: THEME_COLOR_SCRIPT,

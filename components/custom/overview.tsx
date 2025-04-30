@@ -15,14 +15,20 @@ export const Overview = () => {
             transition={{ delay: 0.5 }}
         >
             <div className="rounded-xl p-6 flex flex-col gap-8 leading-relaxed text-center max-w-xl">
-                <p className="flex flex-row justify-center gap-4 items-center">
+                {/* <p className="flex flex-row justify-center gap-4 items-center">
                     <Image
                         src={bpjsLogo}
                         alt="Picture of the author"
                     />
+                </p> */}
+                <p className="text-6xl font-bold" style={{ fontFamily: "'Comfortaa', cursive" }}>
+                    <span className="text-[#7FB3FF]">mycare</span><span className="text-[#FFA76C]">.id</span>
                 </p>
-                <p>
+                {/* <p>
                     Selamat datang di AIVA.
+                </p> */}
+                <p>
+                    Selamat datang di mycare.id Virtual Assistant.
                 </p>
             </div>
         </motion.div>

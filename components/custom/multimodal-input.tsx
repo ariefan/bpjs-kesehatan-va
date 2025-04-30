@@ -37,7 +37,7 @@ const suggestedActions = [
     action: 'Tampilkan statistik secara umum dari data yang ada',
   },
   {
-    title: 'Diagnosis Tertinggi',
+    title: '10 Diagnosis Tertinggi',
     label: '10 diagnosis dengan total biaya klaim tertinggi',
     action:
       'Buatkan grafik yang menggambarkan 10 diagnosis dengan total biaya klaim tertinggi',

@@ -1,8 +1,8 @@
 // Define your models here.
 export const models = [
   {
-    label: 'GPT 4o-mini',
-    name: 'gpt-4o-mini',
+    label: 'GPT 4o',
+    name: 'gpt-4o',
     description: 'For complex, multi-step tasks',
   },
   {
@@ -12,6 +12,6 @@ export const models = [
   },
 ] as const;
 
-export const DEFAULT_MODEL_NAME: Model['name'] = 'gpt-4o-mini';
+export const DEFAULT_MODEL_NAME: Model['name'] = 'gpt-4o';
 
 export type Model = (typeof models)[number];

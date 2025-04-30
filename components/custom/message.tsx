@@ -64,19 +64,13 @@ export const Message = ({
                     <div key={toolCallId} className="skeleton">
                       {toolName === 'getWeather' ? <Weather /> : null}
                       {toolName === 'getPythonScriptResult' ? (
-                        <p className="text-yellow-800 dark:text-yellow-200 p-4">
-                          Membuat visualisasi...
-                        </p>
+                        <p className="p-4">Membuat visualisasi...</p>
                       ) : null}
                       {toolName === 'getRawQueryResult' ? (
-                        <p className="text-yellow-800 dark:text-yellow-200 p-4">
-                          Mengeksekusi SQL query...
-                        </p>
+                        <p className="p-4">Mengeksekusi SQL query...</p>
                       ) : null}
                       {toolName === 'getCreator' ? (
-                        <p className="text-yellow-800 dark:text-yellow-200 p-4">
-                          Membaca pembuat AI...
-                        </p>
+                        <p className="p-4">Membaca pembuat AI...</p>
                       ) : null}
                     </div>
                   );
