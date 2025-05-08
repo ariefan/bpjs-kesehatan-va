@@ -22,11 +22,11 @@ export const Overview = () => {
                     />
                 </p> */}
                 <p className="text-6xl font-bold" style={{ fontFamily: "'Comfortaa', cursive" }}>
-                    <span className="text-[#7FB3FF]">mycare</span><span className="text-[#FFA76C]">.id</span>
+                    <span className="text-[#229753]">T.I.T.I.K.</span><span className="text-[#FFA76C]"></span>
                 </p>
-                {/* <p>
-                    Selamat datang di AIVA.
-                </p> */}
+                <p className="text-lg font-semibold">
+                    Technologi Inteligensi Terapan untuk Interpretasi Klinis
+                </p>
                 <p>
                     Selamat datang di mycare.id Virtual Assistant.
                 </p>
