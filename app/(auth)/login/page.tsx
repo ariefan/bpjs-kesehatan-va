@@ -42,7 +42,7 @@ export default function Page() {
         <div className="flex h-screen w-screen items-center justify-center bg-background bg-gradient-to-br from-green-400 to-blue-500">
             <div className="w-full max-w-md overflow-hidden rounded-2xl flex flex-col gap-8">
                 <div className="flex flex-col items-center justify-center gap-2 px-4 text-center sm:px-16">
-                    <h1 className="text-5xl font-light dark:text-zinc-50 text-green-800">LOGIN AIVA</h1>
+                    <h1 className="text-5xl font-light dark:text-zinc-50 text-green-800">LOGIN TITIK</h1>
                     <Image
                         src={bpjsLogo}
                         alt="Picture of the author"

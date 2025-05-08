@@ -25,11 +25,11 @@ export const Overview = () => {
                     <span className="text-[#229753]">T.I.T.I.K.</span><span className="text-[#FFA76C]"></span>
                 </p>
                 <p className="text-lg font-semibold">
-                    Technologi Inteligensi Terapan untuk Interpretasi Klinis
+                    Teknologi Inteligensi Terapan untuk Interpretasi Klinis
                 </p>
-                <p>
+                {/* <p>
                     Selamat datang di mycare.id Virtual Assistant.
-                </p>
+                </p> */}
             </div>
         </motion.div>
     );
